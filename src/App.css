@@ -77,3 +77,4 @@ button:hover{
 a:hover{
   color: darkviolet;  
 }
+input::placeholder{color: burlywood;}

@@ -9,8 +9,8 @@ class Login extends Component {
                 <div className='card'>
                     <h1>Login</h1>
                     <form action="">
-                        <input type="text"  id="username" />
-                        <input type="password"  id="password" />
+                        <input placeholder='Username' type="text"  id="username" />
+                        <input  placeholder='Password'type="password"  id="password" />
                         <div id='rem'><input type="checkbox" id="remember" /><span >Remember me</span></div>
                         <button type="submit">LOGIN</button>
                     </form>
