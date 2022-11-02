@@ -1,80 +1,69 @@
-*{
-  padding: 0;
-  margin: 0;
+.buttonContainer{
+  display: grid;
+  border: none;
+  outline: none;
+  background-color: rgba(10, 0, 30, 1);
+  grid-template-columns: repeat(4, 1fr);
+  height: 70vh;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
-#root{
-  width: 100%;
-  height: 100vh;
+button{
+  position: relative;
+  font-size: 2rem;
+  font-weight: bolder;
+  border: none;
+  outline: none;
+  background-color: rgba(10, 0, 30, 1);
+  color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+}
+.zero{
+  
+}
+.display{
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  font-size: 3rem;
+  overflow: none;
+  background-color: rgba(10, 0, 30, 1);
+  color: whitesmoke;
+}
+.spec{
+  color: rgba(240, 0, 150, 1);
+  animation-name: colors;
+  animation: infinite 5.0s ;
 }
 
-.container{
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(blue,violet);
+@keyframes colors{
+  from {
+      color: rgba(240, 0, 150, 1);
+  }
+  to {
+    color: rgba(20, 20, 210, 1);
+  }
+}
+#root{
+
+  border-radius: 30px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.card{
-  background-color: rgba(255, 255, 255, 0.2);
-  width: 50vw;
-  border-radius: 20px;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  box-shadow: 10px 10px 50px rgba(255, 255, 255, 0.2);
-}
-h1{
-  color: aliceblue;
-}
-form{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-input{
-  padding-left: 5px;
-  border-radius: 5px;
-  position: relative;
-  height: 30px;
-  border: none;
-  outline: none;
-  margin-top: 10px;
-  color: aliceblue;
-  background-color: rgba(5, 5, 5, 0.2);
-}
-#rem{
-  display: flex;
-  align-items: center;
-}
-#remember{
-  position: relative;
-  width: 10%;
-  margin-bottom: 10px;
-  margin-right: 5px;
 
+.body{
+  width: 100vw;
 }
-button{
-  height: 30px;
-  border-radius: 5px;
-  border: none;
-  background: linear-gradient(to left, rgba(0,0,255,0.3),rgba(0,0,255,0.8));
-  color: white;
-  font-weight: bolder;
+@media screen and (min-width: 992px) {
+  .body{
+    border-radius: 30px;
+    width: 22vw;
+  }
+  
 }
-a{
-  font-weight: 500;
-  color: white;
-  text-decoration: none;
-}
-button:hover{
-  background: linear-gradient(to right, rgba(0,0,255,0.5),rgba(0,0,255,1));
-  height: 35px;
-}
-a:hover{
-  color: darkviolet;  
-}
-input::placeholder{color: burlywood;}
